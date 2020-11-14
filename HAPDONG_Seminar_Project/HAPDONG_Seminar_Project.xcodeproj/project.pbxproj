@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		FDEDBDF1255F94C900FF81EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBDEF255F94C900FF81EB /* Main.storyboard */; };
 		FDEDBDF3255F94CC00FF81EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBDF2255F94CC00FF81EB /* Assets.xcassets */; };
 		FDEDBDF6255F94CC00FF81EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBDF4255F94CC00FF81EB /* LaunchScreen.storyboard */; };
+		FDEDBE14255FC02200FF81EB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBE13255FC02200FF81EB /* Home.storyboard */; };
+		FDEDBE17255FC02B00FF81EB /* Curator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBE16255FC02B00FF81EB /* Curator.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FDEDBDF2255F94CC00FF81EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDEDBDF5255F94CC00FF81EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDEDBDF7255F94CC00FF81EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEDBE13255FC02200FF81EB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FDEDBE16255FC02B00FF81EB /* Curator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Curator.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,6 @@
 				CBCE5C541A85AFFF07D56383 /* Pods-HAPDONG_Seminar_Project.debug.xcconfig */,
 				173841534C36CE9943E79C26 /* Pods-HAPDONG_Seminar_Project.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +84,113 @@
 		FDEDBDE8255F94C900FF81EB /* HAPDONG_Seminar_Project */ = {
 			isa = PBXGroup;
 			children = (
-				FDEDBDE9255F94C900FF81EB /* AppDelegate.swift */,
-				FDEDBDEB255F94C900FF81EB /* SceneDelegate.swift */,
-				FDEDBDED255F94C900FF81EB /* ViewController.swift */,
-				FDEDBDEF255F94C900FF81EB /* Main.storyboard */,
-				FDEDBDF2255F94CC00FF81EB /* Assets.xcassets */,
-				FDEDBDF4255F94CC00FF81EB /* LaunchScreen.storyboard */,
+				FDEDBE05255FBE3C00FF81EB /* Resource */,
+				FDEDBE04255FBE3800FF81EB /* Source */,
 				FDEDBDF7255F94CC00FF81EB /* Info.plist */,
 			);
 			path = HAPDONG_Seminar_Project;
+			sourceTree = "<group>";
+		};
+		FDEDBE04255FBE3800FF81EB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDBE0A255FBE8C00FF81EB /* ViewController */,
+				FDEDBE06255FBE6900FF81EB /* Delegate */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FDEDBE05255FBE3C00FF81EB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDBE0E255FBEC500FF81EB /* DataModel */,
+				FDEDBE0D255FBEC000FF81EB /* Network */,
+				FDEDBDF2255F94CC00FF81EB /* Assets.xcassets */,
+				FDEDBE0C255FBEA100FF81EB /* Storyboard */,
+				FDEDBE0B255FBE9600FF81EB /* Extension */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FDEDBE06255FBE6900FF81EB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDBDE9255F94C900FF81EB /* AppDelegate.swift */,
+				FDEDBDEB255F94C900FF81EB /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		FDEDBE08255FBE7D00FF81EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FDEDBE09255FBE8400FF81EB /* Curator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Curator;
+			sourceTree = "<group>";
+		};
+		FDEDBE0A255FBE8C00FF81EB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDBDED255F94C900FF81EB /* ViewController.swift */,
+				FDEDBE09255FBE8400FF81EB /* Curator */,
+				FDEDBE08255FBE7D00FF81EB /* Home */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FDEDBE0B255FBE9600FF81EB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FDEDBE0C255FBEA100FF81EB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDBE11255FBFD900FF81EB /* Curator */,
+				FDEDBE10255FBFBB00FF81EB /* Home */,
+				FDEDBDF4255F94CC00FF81EB /* LaunchScreen.storyboard */,
+				FDEDBDEF255F94C900FF81EB /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FDEDBE0D255FBEC000FF81EB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FDEDBE0E255FBEC500FF81EB /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		FDEDBE10255FBFBB00FF81EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDBE13255FC02200FF81EB /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FDEDBE11255FBFD900FF81EB /* Curator */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDBE16255FC02B00FF81EB /* Curator.storyboard */,
+			);
+			path = Curator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEDBE17255FC02B00FF81EB /* Curator.storyboard in Resources */,
 				FDEDBDF6255F94CC00FF81EB /* LaunchScreen.storyboard in Resources */,
 				FDEDBDF3255F94CC00FF81EB /* Assets.xcassets in Resources */,
 				FDEDBDF1255F94C900FF81EB /* Main.storyboard in Resources */,
+				FDEDBE14255FC02200FF81EB /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
