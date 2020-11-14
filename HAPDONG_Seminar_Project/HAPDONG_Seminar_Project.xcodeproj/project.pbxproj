@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07FA2FC828EAA2C3191597FD /* Pods_HAPDONG_Seminar_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E82575480EECF59D07DE29 /* Pods_HAPDONG_Seminar_Project.framework */; };
 		FDEDBDEA255F94C900FF81EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDE9255F94C900FF81EB /* AppDelegate.swift */; };
 		FDEDBDEC255F94C900FF81EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDEB255F94C900FF81EB /* SceneDelegate.swift */; };
 		FDEDBDEE255F94C900FF81EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDED255F94C900FF81EB /* ViewController.swift */; };
@@ -18,12 +17,13 @@
 		FDEDBE17255FC02B00FF81EB /* Curator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBE16255FC02B00FF81EB /* Curator.storyboard */; };
 		FDEDBE1A256028A600FF81EB /* CuratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBE19256028A600FF81EB /* CuratorViewController.swift */; };
 		FDEDBE1D256028B100FF81EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBE1C256028B100FF81EB /* HomeViewController.swift */; };
+		FDEDBE2F256045E300FF81EB /* Pods_HAPDONG_Seminar_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D3B29525463FD873E5F759 /* Pods_HAPDONG_Seminar_Project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		173841534C36CE9943E79C26 /* Pods-HAPDONG_Seminar_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPDONG_Seminar_Project.release.xcconfig"; path = "Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project.release.xcconfig"; sourceTree = "<group>"; };
-		68E82575480EECF59D07DE29 /* Pods_HAPDONG_Seminar_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAPDONG_Seminar_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBCE5C541A85AFFF07D56383 /* Pods-HAPDONG_Seminar_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPDONG_Seminar_Project.debug.xcconfig"; path = "Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project.debug.xcconfig"; sourceTree = "<group>"; };
+		B3D3B29525463FD873E5F759 /* Pods_HAPDONG_Seminar_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAPDONG_Seminar_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F402DEDD9B356E0851B6157C /* Pods-HAPDONG_Seminar_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPDONG_Seminar_Project.debug.xcconfig"; path = "Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project.debug.xcconfig"; sourceTree = "<group>"; };
+		F50132D28A1ECEBA0BAB9337 /* Pods-HAPDONG_Seminar_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPDONG_Seminar_Project.release.xcconfig"; path = "Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project.release.xcconfig"; sourceTree = "<group>"; };
 		FDEDBDE6255F94C900FF81EB /* HAPDONG_Seminar_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HAPDONG_Seminar_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEDBDE9255F94C900FF81EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEDBDEB255F94C900FF81EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,28 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FA2FC828EAA2C3191597FD /* Pods_HAPDONG_Seminar_Project.framework in Frameworks */,
+				FDEDBE2F256045E300FF81EB /* Pods_HAPDONG_Seminar_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		35E804F53E1D88B404657C1D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				68E82575480EECF59D07DE29 /* Pods_HAPDONG_Seminar_Project.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		7ACA77C05887E9AB6B7534D1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CBCE5C541A85AFFF07D56383 /* Pods-HAPDONG_Seminar_Project.debug.xcconfig */,
-				173841534C36CE9943E79C26 /* Pods-HAPDONG_Seminar_Project.release.xcconfig */,
+				F402DEDD9B356E0851B6157C /* Pods-HAPDONG_Seminar_Project.debug.xcconfig */,
+				F50132D28A1ECEBA0BAB9337 /* Pods-HAPDONG_Seminar_Project.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E48057233F46D8C3AF4453C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3D3B29525463FD873E5F759 /* Pods_HAPDONG_Seminar_Project.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FDEDBDDD255F94C900FF81EB = {
@@ -73,7 +73,7 @@
 				FDEDBDE8255F94C900FF81EB /* HAPDONG_Seminar_Project */,
 				FDEDBDE7255F94C900FF81EB /* Products */,
 				7ACA77C05887E9AB6B7534D1 /* Pods */,
-				35E804F53E1D88B404657C1D /* Frameworks */,
+				8E48057233F46D8C3AF4453C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,11 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDEDBDFA255F94CC00FF81EB /* Build configuration list for PBXNativeTarget "HAPDONG_Seminar_Project" */;
 			buildPhases = (
-				2CA59ED4BBE29969D9169A11 /* [CP] Check Pods Manifest.lock */,
+				D615D0E1C63C7E0D5EF86F2A /* [CP] Check Pods Manifest.lock */,
 				FDEDBDE2255F94C900FF81EB /* Sources */,
 				FDEDBDE3255F94C900FF81EB /* Frameworks */,
 				FDEDBDE4255F94C900FF81EB /* Resources */,
-				E981766EC9C61187F18CE4C1 /* [CP] Embed Pods Frameworks */,
+				C3389C4BAC6FA07199D7DFA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,7 +269,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2CA59ED4BBE29969D9169A11 /* [CP] Check Pods Manifest.lock */ = {
+		C3389C4BAC6FA07199D7DFA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D615D0E1C63C7E0D5EF86F2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,23 +306,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E981766EC9C61187F18CE4C1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -463,7 +463,7 @@
 		};
 		FDEDBDFB255F94CC00FF81EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBCE5C541A85AFFF07D56383 /* Pods-HAPDONG_Seminar_Project.debug.xcconfig */;
+			baseConfigurationReference = F402DEDD9B356E0851B6157C /* Pods-HAPDONG_Seminar_Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,7 +483,7 @@
 		};
 		FDEDBDFC255F94CC00FF81EB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 173841534C36CE9943E79C26 /* Pods-HAPDONG_Seminar_Project.release.xcconfig */;
+			baseConfigurationReference = F50132D28A1ECEBA0BAB9337 /* Pods-HAPDONG_Seminar_Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
