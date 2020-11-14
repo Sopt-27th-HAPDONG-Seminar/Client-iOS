@@ -16,6 +16,8 @@
 		FDEDBDF6255F94CC00FF81EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBDF4255F94CC00FF81EB /* LaunchScreen.storyboard */; };
 		FDEDBE14255FC02200FF81EB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBE13255FC02200FF81EB /* Home.storyboard */; };
 		FDEDBE17255FC02B00FF81EB /* Curator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBE16255FC02B00FF81EB /* Curator.storyboard */; };
+		FDEDBE1A256028A600FF81EB /* CuratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBE19256028A600FF81EB /* CuratorViewController.swift */; };
+		FDEDBE1D256028B100FF81EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBE1C256028B100FF81EB /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		FDEDBDF7255F94CC00FF81EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDEDBE13255FC02200FF81EB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FDEDBE16255FC02B00FF81EB /* Curator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Curator.storyboard; sourceTree = "<group>"; };
+		FDEDBE19256028A600FF81EB /* CuratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratorViewController.swift; sourceTree = "<group>"; };
+		FDEDBE1C256028B100FF81EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 		FDEDBE08255FBE7D00FF81EB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FDEDBE1C256028B100FF81EB /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 		FDEDBE09255FBE8400FF81EB /* Curator */ = {
 			isa = PBXGroup;
 			children = (
+				FDEDBE19256028A600FF81EB /* CuratorViewController.swift */,
 			);
 			path = Curator;
 			sourceTree = "<group>";
@@ -309,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEDBE1D256028B100FF81EB /* HomeViewController.swift in Sources */,
 				FDEDBDEE255F94C900FF81EB /* ViewController.swift in Sources */,
+				FDEDBE1A256028A600FF81EB /* CuratorViewController.swift in Sources */,
 				FDEDBDEA255F94C900FF81EB /* AppDelegate.swift in Sources */,
 				FDEDBDEC255F94C900FF81EB /* SceneDelegate.swift in Sources */,
 			);

@@ -8,16 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--홈-->
         <scene sceneID="GFz-Fp-1rl">
             <objects>
-                <viewController id="yfa-rZ-bmY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="yfa-rZ-bmY" customClass="HomeViewController" customModule="HAPDONG_Seminar_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mij-Vb-qN6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="홈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaM-3O-QZ1">
-                                <rect key="frame" x="209" y="399" width="15" height="21"/>
+                                <rect key="frame" x="188" y="438" width="13" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -27,13 +27,17 @@
                         <viewLayoutGuide key="safeArea" id="RnY-eb-F82"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="icHome" selectedImage="icHomeSelect" id="WD9-WF-709"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="po1-Jf-EAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="354" y="109"/>
+            <point key="canvasLocation" x="1262.3188405797102" y="108.48214285714285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="icHome" width="25" height="21.5"/>
+        <image name="icHomeSelect" width="25" height="21.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

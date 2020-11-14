@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "scale" : "1x",
+      "idiom" : "universal",
+      "filename" : "icCuratorSelect.png"
+    },
+    {
+      "scale" : "2x",
+      "filename" : "icCuratorSelect@2x.png",
+      "idiom" : "universal"
+    },
+    {
+      "filename" : "icCuratorSelect@3x.png",
+      "scale" : "3x",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

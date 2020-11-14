@@ -2,18 +2,18 @@
   "images" : [
     {
       "filename" : "icHomeSelect.png",
-      "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "idiom" : "universal"
     },
     {
       "idiom" : "universal",
-      "filename" : "icHomeSelect@2x.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "icHomeSelect@2x.png"
     },
     {
+      "scale" : "3x",
       "idiom" : "universal",
-      "filename" : "icHomeSelect@3x.png",
-      "scale" : "3x"
+      "filename" : "icHomeSelect@3x.png"
     }
   ],
   "info" : {

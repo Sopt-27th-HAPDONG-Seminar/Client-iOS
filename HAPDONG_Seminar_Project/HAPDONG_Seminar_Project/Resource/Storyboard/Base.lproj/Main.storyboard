@@ -10,7 +10,7 @@
         <scene sceneID="sdv-lO-Kw1">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="igV-Ti-hPP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="홈" image="icHome" selectedImage="icHomeSelect" id="GdU-0Y-BE4"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="icHome" landscapeImage="icHome" selectedImage="icHomeSelect" id="GdU-0Y-BE4"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehW-2Y-2zJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -20,7 +20,7 @@
         <scene sceneID="ZxL-DX-Ee0">
             <objects>
                 <viewControllerPlaceholder storyboardName="Curator" id="fXC-8U-BLP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="큐레이터" image="icCurator" selectedImage="icCuratorSelected" id="fkn-YZ-Zx0"/>
+                    <tabBarItem key="tabBarItem" title="큐레이터" image="icCurator" landscapeImage="icCurator" selectedImage="icCuratorSelected" id="fkn-YZ-Zx0"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4Z-LE-O52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -32,8 +32,10 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="692-nG-asb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r8w-yY-ACo">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.82745098039215681" green="0.43137254901960786" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="igV-Ti-hPP" kind="relationship" relationship="viewControllers" id="V82-Jj-XXT"/>
