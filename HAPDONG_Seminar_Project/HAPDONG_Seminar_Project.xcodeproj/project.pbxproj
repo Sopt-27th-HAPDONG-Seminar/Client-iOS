@@ -18,6 +18,10 @@
 		FDEDBE1A256028A600FF81EB /* CuratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBE19256028A600FF81EB /* CuratorViewController.swift */; };
 		FDEDBE1D256028B100FF81EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBE1C256028B100FF81EB /* HomeViewController.swift */; };
 		FDEDBE2F256045E300FF81EB /* Pods_HAPDONG_Seminar_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D3B29525463FD873E5F759 /* Pods_HAPDONG_Seminar_Project.framework */; };
+		FDEDBE372560E40D00FF81EB /* TextView + addSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBE362560E40D00FF81EB /* TextView + addSpacing.swift */; };
+		FDEDBE3D2560FB3800FF81EB /* HomeNewsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBE3C2560FB3800FF81EB /* HomeNewsHeaderCell.swift */; };
+		FDEDBE432560FB4B00FF81EB /* HomeNewsMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBE422560FB4B00FF81EB /* HomeNewsMainCell.swift */; };
+		FDEDBE482560FB7800FF81EB /* HomePeopleListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBE472560FB7800FF81EB /* HomePeopleListCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		FDEDBE16255FC02B00FF81EB /* Curator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Curator.storyboard; sourceTree = "<group>"; };
 		FDEDBE19256028A600FF81EB /* CuratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratorViewController.swift; sourceTree = "<group>"; };
 		FDEDBE1C256028B100FF81EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FDEDBE362560E40D00FF81EB /* TextView + addSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView + addSpacing.swift"; sourceTree = "<group>"; };
+		FDEDBE3C2560FB3800FF81EB /* HomeNewsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsHeaderCell.swift; sourceTree = "<group>"; };
+		FDEDBE422560FB4B00FF81EB /* HomeNewsMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsMainCell.swift; sourceTree = "<group>"; };
+		FDEDBE472560FB7800FF81EB /* HomePeopleListCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePeopleListCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 		FDEDBE08255FBE7D00FF81EB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FDEDBE4A2560FB8B00FF81EB /* Cell */,
 				FDEDBE1C256028B100FF81EB /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -154,6 +163,7 @@
 		FDEDBE0B255FBE9600FF81EB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FDEDBE362560E40D00FF81EB /* TextView + addSpacing.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -197,6 +207,16 @@
 				FDEDBE16255FC02B00FF81EB /* Curator.storyboard */,
 			);
 			path = Curator;
+			sourceTree = "<group>";
+		};
+		FDEDBE4A2560FB8B00FF81EB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDBE3C2560FB3800FF81EB /* HomeNewsHeaderCell.swift */,
+				FDEDBE422560FB4B00FF81EB /* HomeNewsMainCell.swift */,
+				FDEDBE472560FB7800FF81EB /* HomePeopleListCollectionCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,8 +336,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDEDBE1D256028B100FF81EB /* HomeViewController.swift in Sources */,
+				FDEDBE482560FB7800FF81EB /* HomePeopleListCollectionCell.swift in Sources */,
 				FDEDBDEE255F94C900FF81EB /* ViewController.swift in Sources */,
 				FDEDBE1A256028A600FF81EB /* CuratorViewController.swift in Sources */,
+				FDEDBE3D2560FB3800FF81EB /* HomeNewsHeaderCell.swift in Sources */,
+				FDEDBE432560FB4B00FF81EB /* HomeNewsMainCell.swift in Sources */,
+				FDEDBE372560E40D00FF81EB /* TextView + addSpacing.swift in Sources */,
 				FDEDBDEA255F94C900FF81EB /* AppDelegate.swift in Sources */,
 				FDEDBDEC255F94C900FF81EB /* SceneDelegate.swift in Sources */,
 			);
