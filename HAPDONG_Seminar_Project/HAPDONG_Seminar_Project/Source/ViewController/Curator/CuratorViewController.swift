@@ -10,13 +10,20 @@ import UIKit
 class CuratorViewController: UIViewController {
 
     //MARK:- IBOutlet Part
-    /// Label, ColelctionView, TextField, ImageView 등 @IBOutlet 변수들을 선언합니다.  // 변수명 lowerCamelCase 사용
-    /// ex)  @IBOutlet weak var qnaTextBoxBackgroundImage: UIImageView!
+
+    @IBOutlet weak var subscribeCuratorCollectionView: UICollectionView!
+    
+    @IBOutlet weak var categoryTotalButton: UIButton!
+    @IBOutlet weak var categoryNewButton: UIButton!
+    @IBOutlet weak var categoryRecommendButton: UIButton!
+    @IBOutlet weak var categoryCollectionView: UICollectionView!
+    
     
     
     //MARK:- Variable Part
-    /// 뷰컨에 필요한 변수들을 선언합니다  // 변수명 lowerCamelCase 사용
-    /// ex)  var imageViewList : [UIImageView] = []
+
+    var subscribeCuratorList : [SubsribeCuratorDataModel] = []
+    var categoryList : [CateogoryDataModel] = []
     
     
     //MARK:- Constraint Part
@@ -29,31 +36,151 @@ class CuratorViewController: UIViewController {
     /// ex) override func viewWillAppear() { }
     override func viewDidLoad() {
         super.viewDidLoad()
+        settingCollectionView()
 
     }
     //MARK:- IBAction Part
-    /// 버튼과 같은 동작을 선언하는 @IBAction 을 선언합니다 , IBAction 함수 명은 동사 형태로!!  // 함수명 lowerCamelCase 사용
-    /// ex) @IBOutlet @IBAction func answerSelectedButtonClicked(_ sender: Any) { }
+
+    @IBAction func subscribeCuratorTotalShowButtonClicked(_ sender: Any) {
+        
+    }
     
+    @IBAction func categoryTotalButtonClicked(_ sender: Any) {
+    }
+    
+    
+    @IBAction func categoryNewButtonClicked(_ sender: Any) {
+    }
+    
+    @IBAction func categoryRecommendButtonClicked(_ sender: Any) {
+    }
     
     //MARK:- default Setting Function Part
-    /// 기본적인 세팅을 위한 함수 부분입니다 // 함수명 lowerCamelCase 사용
-    /// ex) func tableViewSetting() {
-    ///         myTableView.delegate = self
-    ///         myTableView.datasource = self
-    ///    }
+    
+    func settingCollectionView()
+    {
+        self.subscribeCuratorCollectionView.delegate = self
+        self.subscribeCuratorCollectionView.dataSource = self
+//        self.subscribeCuratorCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "SubscribeCuratorCollectionCell")
+        
+        self.categoryCollectionView.delegate = self
+        self.categoryCollectionView.dataSource = self
+//        self.categoryCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CategoryCollectionCell")
+        
+    }
     
     
     //MARK:- Function Part
-    /// 로직을 구현 하는 함수 부분입니다. // 함수명 lowerCamelCase 사용
-    /// ex) func getIndexPath() -> Int {
-    ///
-    ///    }
+ 
     
-    
-    //MARK:- extension 부분
-    /// UICollectionViewDelegate 부분 처럼 외부 프로토콜을 채택하는 경우나, 외부 클래스 확장 할 때,  extension을 작성하는 부분입니다
-    /// ex) extension ViewController : UICollectionViewDelegate { }
 
 
 }
+
+
+extension CuratorViewController : UICollectionViewDelegate, UICollectionViewDataSource
+{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == subscribeCuratorCollectionView
+        {
+            return 3
+        }
+        
+        else
+        {
+            return 6
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            
+        if collectionView == subscribeCuratorCollectionView
+        {
+
+            guard let curatorCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SubscribeCuratorCollectionCell", for: indexPath) as? SubscribeCuratorCollectionCell else {return UICollectionViewCell() }
+            
+            curatorCell.setTagCollection()
+            
+
+            return curatorCell
+        }
+        else
+        {
+            guard let categoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionCell", for: indexPath) as? CategoryCollectionCell else {return UICollectionViewCell() }
+            
+            return categoryCell
+            
+
+        }
+    }
+    
+    
+}
+
+
+
+extension CuratorViewController : UICollectionViewDelegateFlowLayout
+{
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == subscribeCuratorCollectionView
+        {
+            
+            let width = UIScreen.main.bounds.width * (269/375)
+            return CGSize(width: width, height: 112)
+        }
+        else
+        {
+            let width = UIScreen.main.bounds.width * (164/375)
+            return CGSize(width: width, height: 190)
+        }
+        
+        
+
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        if collectionView == subscribeCuratorCollectionView
+        {
+            return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 50)
+        }
+        else
+        {
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
+        if collectionView == subscribeCuratorCollectionView
+        {
+            
+            return 16
+
+        }
+        else
+        {
+            return 15
+        }
+     
+    }
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        
+        if collectionView == subscribeCuratorCollectionView
+        {
+            
+            return 0
+        }
+        else
+        {
+            return 11
+        }
+     
+    }
+}
+
+

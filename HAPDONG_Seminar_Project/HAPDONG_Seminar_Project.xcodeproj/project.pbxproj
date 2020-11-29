@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD76EC912573C20800AF9ED4 /* SubscribeCuratorDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD76EC902573C20800AF9ED4 /* SubscribeCuratorDataModel.swift */; };
+		FD76EC942573C22900AF9ED4 /* CategoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD76EC932573C22900AF9ED4 /* CategoryDataModel.swift */; };
+		FD76EC9B2573C31100AF9ED4 /* CategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD76EC9A2573C31100AF9ED4 /* CategoryCollectionCell.swift */; };
+		FD76EC9E2573C32100AF9ED4 /* SubscribeCuratorCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD76EC9D2573C32100AF9ED4 /* SubscribeCuratorCollectionCell.swift */; };
+		FD76ECA12573C47600AF9ED4 /* CuratorTagCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD76ECA02573C47600AF9ED4 /* CuratorTagCollectionCell.swift */; };
+		FD76ECA42573C86D00AF9ED4 /* setImage + UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD76ECA32573C86D00AF9ED4 /* setImage + UIImageView.swift */; };
+		FD76ECA72573F88B00AF9ED4 /* CategoryTagCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD76ECA62573F88B00AF9ED4 /* CategoryTagCollectionCell.swift */; };
 		FDEDBDEA255F94C900FF81EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDE9255F94C900FF81EB /* AppDelegate.swift */; };
 		FDEDBDEC255F94C900FF81EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDEB255F94C900FF81EB /* SceneDelegate.swift */; };
 		FDEDBDEE255F94C900FF81EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDED255F94C900FF81EB /* ViewController.swift */; };
@@ -28,6 +35,13 @@
 		B3D3B29525463FD873E5F759 /* Pods_HAPDONG_Seminar_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAPDONG_Seminar_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F402DEDD9B356E0851B6157C /* Pods-HAPDONG_Seminar_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPDONG_Seminar_Project.debug.xcconfig"; path = "Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		F50132D28A1ECEBA0BAB9337 /* Pods-HAPDONG_Seminar_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPDONG_Seminar_Project.release.xcconfig"; path = "Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project.release.xcconfig"; sourceTree = "<group>"; };
+		FD76EC902573C20800AF9ED4 /* SubscribeCuratorDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeCuratorDataModel.swift; sourceTree = "<group>"; };
+		FD76EC932573C22900AF9ED4 /* CategoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDataModel.swift; sourceTree = "<group>"; };
+		FD76EC9A2573C31100AF9ED4 /* CategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionCell.swift; sourceTree = "<group>"; };
+		FD76EC9D2573C32100AF9ED4 /* SubscribeCuratorCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeCuratorCollectionCell.swift; sourceTree = "<group>"; };
+		FD76ECA02573C47600AF9ED4 /* CuratorTagCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratorTagCollectionCell.swift; sourceTree = "<group>"; };
+		FD76ECA32573C86D00AF9ED4 /* setImage + UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "setImage + UIImageView.swift"; sourceTree = "<group>"; };
+		FD76ECA62573F88B00AF9ED4 /* CategoryTagCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTagCollectionCell.swift; sourceTree = "<group>"; };
 		FDEDBDE6255F94C900FF81EB /* HAPDONG_Seminar_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HAPDONG_Seminar_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEDBDE9255F94C900FF81EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEDBDEB255F94C900FF81EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +87,33 @@
 				B3D3B29525463FD873E5F759 /* Pods_HAPDONG_Seminar_Project.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD76EC972573C2E800AF9ED4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FD76EC992573C2F500AF9ED4 /* Category */,
+				FD76EC982573C2EE00AF9ED4 /* SubscribeCurator */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FD76EC982573C2EE00AF9ED4 /* SubscribeCurator */ = {
+			isa = PBXGroup;
+			children = (
+				FD76EC9D2573C32100AF9ED4 /* SubscribeCuratorCollectionCell.swift */,
+				FD76ECA02573C47600AF9ED4 /* CuratorTagCollectionCell.swift */,
+			);
+			path = SubscribeCurator;
+			sourceTree = "<group>";
+		};
+		FD76EC992573C2F500AF9ED4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FD76EC9A2573C31100AF9ED4 /* CategoryCollectionCell.swift */,
+				FD76ECA62573F88B00AF9ED4 /* CategoryTagCollectionCell.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		FDEDBDDD255F94C900FF81EB = {
@@ -145,6 +186,7 @@
 		FDEDBE09255FBE8400FF81EB /* Curator */ = {
 			isa = PBXGroup;
 			children = (
+				FD76EC972573C2E800AF9ED4 /* Cell */,
 				FDEDBE19256028A600FF81EB /* CuratorViewController.swift */,
 			);
 			path = Curator;
@@ -164,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				FDEDBE362560E40D00FF81EB /* TextView + addSpacing.swift */,
+				FD76ECA32573C86D00AF9ED4 /* setImage + UIImageView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -189,6 +232,8 @@
 		FDEDBE0E255FBEC500FF81EB /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				FD76EC902573C20800AF9ED4 /* SubscribeCuratorDataModel.swift */,
+				FD76EC932573C22900AF9ED4 /* CategoryDataModel.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -335,13 +380,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD76ECA72573F88B00AF9ED4 /* CategoryTagCollectionCell.swift in Sources */,
 				FDEDBE1D256028B100FF81EB /* HomeViewController.swift in Sources */,
 				FDEDBE482560FB7800FF81EB /* HomePeopleListCollectionCell.swift in Sources */,
 				FDEDBDEE255F94C900FF81EB /* ViewController.swift in Sources */,
 				FDEDBE1A256028A600FF81EB /* CuratorViewController.swift in Sources */,
 				FDEDBE3D2560FB3800FF81EB /* HomeNewsHeaderCell.swift in Sources */,
+				FD76ECA12573C47600AF9ED4 /* CuratorTagCollectionCell.swift in Sources */,
+				FD76EC942573C22900AF9ED4 /* CategoryDataModel.swift in Sources */,
+				FD76ECA42573C86D00AF9ED4 /* setImage + UIImageView.swift in Sources */,
+				FD76EC912573C20800AF9ED4 /* SubscribeCuratorDataModel.swift in Sources */,
 				FDEDBE432560FB4B00FF81EB /* HomeNewsMainCell.swift in Sources */,
 				FDEDBE372560E40D00FF81EB /* TextView + addSpacing.swift in Sources */,
+				FD76EC9B2573C31100AF9ED4 /* CategoryCollectionCell.swift in Sources */,
+				FD76EC9E2573C32100AF9ED4 /* SubscribeCuratorCollectionCell.swift in Sources */,
 				FDEDBDEA255F94C900FF81EB /* AppDelegate.swift in Sources */,
 				FDEDBDEC255F94C900FF81EB /* SceneDelegate.swift in Sources */,
 			);
@@ -420,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -475,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
