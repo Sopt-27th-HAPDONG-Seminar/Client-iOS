@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A56C00392578D0230062927F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C00382578D0230062927F /* UIColorExtension.swift */; };
 		FDEDBDEA255F94C900FF81EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDE9255F94C900FF81EB /* AppDelegate.swift */; };
 		FDEDBDEC255F94C900FF81EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDEB255F94C900FF81EB /* SceneDelegate.swift */; };
 		FDEDBDEE255F94C900FF81EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDED255F94C900FF81EB /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A56C00382578D0230062927F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		B3D3B29525463FD873E5F759 /* Pods_HAPDONG_Seminar_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAPDONG_Seminar_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F402DEDD9B356E0851B6157C /* Pods-HAPDONG_Seminar_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPDONG_Seminar_Project.debug.xcconfig"; path = "Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		F50132D28A1ECEBA0BAB9337 /* Pods-HAPDONG_Seminar_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPDONG_Seminar_Project.release.xcconfig"; path = "Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		FDEDBE0B255FBE9600FF81EB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A56C00382578D0230062927F /* UIColorExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			files = (
 				FDEDBE1D256028B100FF81EB /* HomeViewController.swift in Sources */,
 				FDEDBDEE255F94C900FF81EB /* ViewController.swift in Sources */,
+				A56C00392578D0230062927F /* UIColorExtension.swift in Sources */,
 				FDEDBE1A256028A600FF81EB /* CuratorViewController.swift in Sources */,
 				FDEDBDEA255F94C900FF81EB /* AppDelegate.swift in Sources */,
 				FDEDBDEC255F94C900FF81EB /* SceneDelegate.swift in Sources */,
