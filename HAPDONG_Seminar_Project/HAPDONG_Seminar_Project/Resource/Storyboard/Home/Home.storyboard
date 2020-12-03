@@ -1,43 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yfa-rZ-bmY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZUz-sq-IyD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--홈-->
+        <!--Home View Controller-->
         <scene sceneID="GFz-Fp-1rl">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="yfa-rZ-bmY" customClass="HomeViewController" customModule="HAPDONG_Seminar_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mij-Vb-qN6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1660"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="홈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaM-3O-QZ1">
-                                <rect key="frame" x="188" y="438" width="13" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="코멘트 검색하기" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SS8-tf-NFb">
+                                <rect key="frame" x="15.5" y="108" width="344" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="344" id="JZt-qV-3pk"/>
+                                    <constraint firstAttribute="height" constant="40" id="rR4-bW-kSm"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P3b-cN-Xj6">
+                                <rect key="frame" x="0.0" y="168" width="375" height="1409"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="omX-Ix-gRo">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="curatorCell" id="dhA-PT-67U">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="V4c-jy-VQg">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7k-xG-FLp">
+                                <rect key="frame" x="319.5" y="108" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Z7k-xG-FLp" secondAttribute="height" multiplier="1:1" id="dHM-Jo-OL1"/>
+                                </constraints>
+                                <state key="normal" image="icSearch"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RnY-eb-F82"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93182784320000001" green="0.93193590640000001" blue="0.93177932500000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SS8-tf-NFb" firstAttribute="top" secondItem="RnY-eb-F82" secondAttribute="top" constant="20" id="3N2-h0-jHF"/>
+                            <constraint firstItem="RnY-eb-F82" firstAttribute="bottom" secondItem="P3b-cN-Xj6" secondAttribute="bottom" id="CLK-81-2MX"/>
+                            <constraint firstItem="SS8-tf-NFb" firstAttribute="centerX" secondItem="Mij-Vb-qN6" secondAttribute="centerX" id="J8d-wb-GaW"/>
+                            <constraint firstItem="P3b-cN-Xj6" firstAttribute="leading" secondItem="RnY-eb-F82" secondAttribute="leading" id="K1o-JC-8o5"/>
+                            <constraint firstItem="SS8-tf-NFb" firstAttribute="top" secondItem="RnY-eb-F82" secondAttribute="top" constant="20" id="eUx-Ay-VUB"/>
+                            <constraint firstItem="SS8-tf-NFb" firstAttribute="trailing" secondItem="Z7k-xG-FLp" secondAttribute="trailing" id="eWG-rO-iKM"/>
+                            <constraint firstItem="Z7k-xG-FLp" firstAttribute="top" secondItem="SS8-tf-NFb" secondAttribute="top" id="qq1-7u-A9F"/>
+                            <constraint firstItem="P3b-cN-Xj6" firstAttribute="top" secondItem="SS8-tf-NFb" secondAttribute="bottom" constant="20" id="y2g-4L-g6y"/>
+                            <constraint firstItem="RnY-eb-F82" firstAttribute="trailing" secondItem="P3b-cN-Xj6" secondAttribute="trailing" id="y8K-NP-9Ki"/>
+                            <constraint firstItem="SS8-tf-NFb" firstAttribute="bottom" secondItem="Z7k-xG-FLp" secondAttribute="bottom" id="zou-A2-oem"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" image="icHome" selectedImage="icHomeSelect" id="WD9-WF-709"/>
+                    <navigationItem key="navigationItem" id="NkM-BQ-x1K"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="1660"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="po1-Jf-EAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1262.3188405797102" y="108.48214285714285"/>
+            <point key="canvasLocation" x="2073" y="-178"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="yyf-e8-zwZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZUz-sq-IyD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="홈" image="icHome" selectedImage="icHomeSelect" id="WD9-WF-709"/>
+                    <toolbarItems/>
+                    <size key="freeformSize" width="375" height="1660"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rQd-3m-iEY">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yfa-rZ-bmY" kind="relationship" relationship="rootViewController" id="e52-Gq-buB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSP-bg-smr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150.7246376811595" y="-177.45535714285714"/>
         </scene>
     </scenes>
     <resources>
         <image name="icHome" width="25" height="21.5"/>
         <image name="icHomeSelect" width="25" height="21.5"/>
+        <image name="icSearch" width="48" height="48"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
