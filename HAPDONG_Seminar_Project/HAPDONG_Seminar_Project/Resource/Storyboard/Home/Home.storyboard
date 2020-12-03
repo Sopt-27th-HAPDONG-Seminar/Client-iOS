@@ -227,7 +227,7 @@
                                                     <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dN-bs-e75">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dN-bs-e75">
                                                     <rect key="frame" x="16" y="165" width="382" height="112"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <attributedString key="attributedText">
@@ -252,7 +252,7 @@
                                                     </attributedString>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eb8-o0-Pnm">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eb8-o0-Pnm">
                                                     <rect key="frame" x="16" y="305" width="382" height="100"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
@@ -262,11 +262,25 @@
                                                         <fragment>
                                                             <string key="content">큐레이터평
 딜리버리 히어로의 배달의 민족 인수 메가딜에 대한 공정위
-심사가 1년여의 리뷰를 거쳐 내달 초에 드디어...</string>
+심사가 1년여의 리뷰를 거쳐 내달 초에 드디어... 큐레이터평
+</string>
                                                             <attributes>
                                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment>
+                                                            <string key="content">딜리버리 히어로의 배달의 민족 인수 메가딜에 대한 공정위
+심사가 1년여의 리뷰를 거쳐 내달 초에 드디어... 큐레이터평
+딜리버리 히어로의 배달의 민족 인수 메가딜에 대한 공정위
+심사가 1년여의 리뷰를 거쳐 내달 초에 드디어... 큐레이터평
+딜리버리 히어로의 배달의 민족 인수 메가딜에 대한 공정위
+심사가 1년여의 리뷰를 거쳐 내달 초에 드디어...</string>
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -474,6 +488,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="companyNameTextLabel" destination="wZM-4u-CKe" id="4ul-WV-hh7"/>
+                                            <outlet property="mainContentTextViewHeightConstraint" destination="pel-Yq-Hsf" id="8IG-0x-QPY"/>
                                             <outlet property="mainContentView" destination="Eb8-o0-Pnm" id="wGu-gw-WdP"/>
                                             <outlet property="newsHeaderDescriptionTextLabel" destination="qiS-HY-WAS" id="bRA-Ep-lmr"/>
                                             <outlet property="newsImageView" destination="KRh-pC-P2y" id="9tM-mq-Nu9"/>

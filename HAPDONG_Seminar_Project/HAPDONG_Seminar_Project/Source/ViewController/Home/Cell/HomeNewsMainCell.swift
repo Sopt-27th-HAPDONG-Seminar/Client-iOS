@@ -7,6 +7,21 @@
 
 import UIKit
 
+class ExpandingTableViewCellContent {
+
+    var ExpandedList: [Bool] = []
+
+
+    init() {
+
+        for _ in 0...12
+        {
+            ExpandedList.append(false)
+        }
+    }
+
+}
+
 class HomeNewsMainCell: UITableViewCell {
 
     
@@ -50,6 +65,10 @@ class HomeNewsMainCell: UITableViewCell {
 
     //MARK:- Constraint Part
     
+    
+    @IBOutlet weak var mainContentTextViewHeightConstraint: NSLayoutConstraint!
+    
+    
     //MARK:- Life Cycle Part
     
     override func awakeFromNib() {
@@ -82,6 +101,18 @@ class HomeNewsMainCell: UITableViewCell {
         
         newsTitleTextView.setLineHeight(lineHeight: 1.2)
         newsTitleTextView.contentInset.left = -5
+    }
+    
+    func setData(isClicked : Bool)
+    {
+        if isClicked == true
+        {
+            self.mainContentTextViewHeightConstraint.constant = 200
+        }
+        else
+        {
+            self.mainContentTextViewHeightConstraint.constant = 100
+        }
     }
     
 

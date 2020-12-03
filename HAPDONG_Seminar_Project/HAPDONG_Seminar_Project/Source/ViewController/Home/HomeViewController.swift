@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
     /// 뷰컨에 필요한 변수들을 선언합니다  // 변수명 lowerCamelCase 사용
     /// ex)  var imageViewList : [UIImageView] = []
     
-    
+    var newsContentDataSource = ExpandingTableViewCellContent()
 
     //MARK:- Constraint Part
     /// 스토리보드에 있는 layout 에 대한 @IBOutlet 을 선언합니다. (Height, Leading, Trailing 등등..)  // 변수명 lowerCamelCase 사용
@@ -94,6 +94,20 @@ extension HomeViewController : UITableViewDelegate
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row > 0
+        {
+            let content = newsContentDataSource
+            
+            content.ExpandedList[indexPath.row] = !content.ExpandedList[indexPath.row]
+            
+            self.mainHomeTableView.reloadRows(at: [indexPath], with: .automatic)
+        }
+        
+ 
+    }
+    
     
 }
 
@@ -115,6 +129,8 @@ extension HomeViewController : UITableViewDataSource
         else
         {
             guard let newsCell = tableView.dequeueReusableCell(withIdentifier: "newsMainCell", for: indexPath) as? HomeNewsMainCell else {return UITableViewCell()}
+
+            newsCell.setData(isClicked:  newsContentDataSource.ExpandedList[indexPath.row])
         
             newsCell.selectionStyle = .none
             return newsCell
