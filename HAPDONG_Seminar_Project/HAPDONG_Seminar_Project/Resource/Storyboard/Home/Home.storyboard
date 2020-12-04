@@ -58,7 +58,7 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pOS-rj-9iQ">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pOS-rj-9iQ" customClass="CuratorCell" customModule="HAPDONG_Seminar_Project" customModuleProvider="target">
                                                             <rect key="frame" x="71" y="0.5" width="71" height="71"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2pP-Ux-B8V">
@@ -80,6 +80,9 @@
                                                                 </constraints>
                                                             </collectionViewCellContentView>
                                                             <size key="customSize" width="71" height="71"/>
+                                                            <connections>
+                                                                <outlet property="curatorImageView" destination="J71-96-ne5" id="456-pW-BLq"/>
+                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
                                                     <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dtK-4T-NWA">
@@ -109,7 +112,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="617" id="5U2-QW-bHr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="617" id="5U2-QW-bHr" customClass="ContentsCell" customModule="HAPDONG_Seminar_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="99.5" width="375" height="617"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5U2-QW-bHr" id="Rnm-qW-Sfm">
@@ -298,6 +301,19 @@
                                                 <constraint firstItem="hFM-i5-dCg" firstAttribute="top" secondItem="jgt-Tm-9L7" secondAttribute="bottom" constant="30" id="zgj-rs-gfO"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="9I3-tQ-wj2" id="gdc-Px-aUQ"/>
+                                            <outlet property="contentsLabel" destination="9I3-tQ-wj2" id="zRb-Ne-X36"/>
+                                            <outlet property="contentsTitleLabel" destination="SGf-PN-hHo" id="Bo3-Pf-egA"/>
+                                            <outlet property="newsImage" destination="7zY-gy-qY7" id="Tvn-cq-tn4"/>
+                                            <outlet property="newsPublisherLabel" destination="yAx-tO-1j4" id="856-ZD-Wl4"/>
+                                            <outlet property="newsTitleLabel" destination="IxP-J8-mkN" id="mvP-U0-qiz"/>
+                                            <outlet property="postTimeLabel" destination="DOg-mT-LKY" id="S8Y-K1-JXm"/>
+                                            <outlet property="savedNumLabel" destination="TXz-F1-7QV" id="0Le-A7-zqJ"/>
+                                            <outlet property="writerImage" destination="hFM-i5-dCg" id="oOz-pp-VNS"/>
+                                            <outlet property="writerJobLabel" destination="Ltc-jM-he0" id="lmf-PN-kWS"/>
+                                            <outlet property="writerNameLabel" destination="Ltc-jM-he0" id="o8h-y2-mHJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
