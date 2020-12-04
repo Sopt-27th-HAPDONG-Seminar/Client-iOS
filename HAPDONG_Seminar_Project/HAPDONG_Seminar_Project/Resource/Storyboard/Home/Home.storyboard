@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="168" width="375" height="1409"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="T7A-SN-NRa">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="T7A-SN-NRa" customClass="TableCollectionViewCell" customModule="HAPDONG_Seminar_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="71.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T7A-SN-NRa" id="EOK-4Y-cii">
@@ -336,6 +336,11 @@
                     <navigationItem key="navigationItem" id="NkM-BQ-x1K"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="1660"/>
+                    <connections>
+                        <outlet property="homeTableView" destination="bCj-lX-7sL" id="ekH-sk-ILS"/>
+                        <outlet property="searchButton" destination="Z7k-xG-FLp" id="qhD-Ua-ng2"/>
+                        <outlet property="searchTextField" destination="SS8-tf-NFb" id="YYt-fD-rQY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="po1-Jf-EAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

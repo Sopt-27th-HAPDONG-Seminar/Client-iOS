@@ -13,11 +13,18 @@ class HomeViewController: UIViewController {
     /// Label, ColelctionView, TextField, ImageView 등 @IBOutlet 변수들을 선언합니다.  // 변수명 lowerCamelCase 사용
     /// ex)  @IBOutlet weak var qnaTextBoxBackgroundImage: UIImageView!
     
+    @IBOutlet weak var homeTableView: UITableView!
+//    @IBOutlet weak var curatorCollectionView: UICollectionView!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var searchTextField: UITextField!
     
-
     //MARK:- Variable Part
     /// 뷰컨에 필요한 변수들을 선언합니다  // 변수명 lowerCamelCase 사용
     /// ex)  var imageViewList : [UIImageView] = []
+    
+    let curatorImage: [String] = ["btnWm54","btnWm54","btnWm54","btnWm54","btnWm54","btnWm54","btnWm54","btnWm54"]
+    
+    
     
     
 
@@ -32,6 +39,14 @@ class HomeViewController: UIViewController {
     /// ex) override func viewWillAppear() { }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        homeTableView.delegate = self
+        homeTableView.delegate = self
+
+//        curatorCollectionView.dataSource = self
+//        curatorCollectionView.delegate = self
+        
+        
 
     }
     
@@ -56,14 +71,46 @@ class HomeViewController: UIViewController {
     ///         myTableView.delegate = self
     ///         myTableView.datasource = self
     ///    }
+
+    
+}
+
+//MARK:- extension 부분
+/// UICollectionViewDelegate 부분 처럼 외부 프로토콜을 채택하는 경우나, 외부 클래스 확장 할 때,  extension을 작성하는 부분입니다
+/// ex) extension ViewController : UICollectionViewDelegate { }
+
+
+//extension HomeViewController : UICollectionViewDataSource{
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        <#code#>
+//    }
+//
+//
+//}
+//
+//extension HomeViewController : UICollectionViewDelegateFlowLayout{
+//
+//}
+
+
+extension HomeViewController : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        return UITableViewCell()
+    
+    }
     
     
+}
 
- 
-
-    //MARK:- extension 부분
-    /// UICollectionViewDelegate 부분 처럼 외부 프로토콜을 채택하는 경우나, 외부 클래스 확장 할 때,  extension을 작성하는 부분입니다
-    /// ex) extension ViewController : UICollectionViewDelegate { }
+extension HomeViewController : UITableViewDelegate{
     
-
 }
