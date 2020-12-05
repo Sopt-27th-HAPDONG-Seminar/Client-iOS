@@ -8,13 +8,13 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     //MARK:- IBOutlet Part
     /// Label, ColelctionView, TextField, ImageView 등 @IBOutlet 변수들을 선언합니다.  // 변수명 lowerCamelCase 사용
     /// ex)  @IBOutlet weak var qnaTextBoxBackgroundImage: UIImageView!
     
     @IBOutlet weak var homeTableView: UITableView!
-//    @IBOutlet weak var curatorCollectionView: UICollectionView!
+    //    @IBOutlet weak var curatorCollectionView: UICollectionView!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var searchTextField: UITextField!
     
@@ -22,18 +22,18 @@ class HomeViewController: UIViewController {
     /// 뷰컨에 필요한 변수들을 선언합니다  // 변수명 lowerCamelCase 사용
     /// ex)  var imageViewList : [UIImageView] = []
     
-    let curatorImage: [String] = ["btnWm54","btnWm54","btnWm54","btnWm54","btnWm54","btnWm54","btnWm54","btnWm54"]
+    var ContentDataSource = ContentsCell()
     
     
     
     
-
+    
     //MARK:- Constraint Part
     /// 스토리보드에 있는 layout 에 대한 @IBOutlet 을 선언합니다. (Height, Leading, Trailing 등등..)  // 변수명 lowerCamelCase 사용
     /// ex) @IBOutlet weak var lastImageBottomConstraint: NSLayoutConstraint!
     
     
-
+    
     //MARK:- Life Cycle Part
     /// 앱의 Life Cycle 부분을 선언합니다
     /// ex) override func viewWillAppear() { }
@@ -41,13 +41,12 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         homeTableView.delegate = self
-        homeTableView.delegate = self
+        homeTableView.dataSource = self
+        homeTableView.backgroundColor = UIColor.veryLightPink
 
-//        curatorCollectionView.dataSource = self
-//        curatorCollectionView.delegate = self
-        
-        
+//        homeTableView.register(ContentsCell.self, forCellReuseIdentifier: ContentsCell.identifier)
 
+        
     }
     
     //MARK:- IBAction Part
@@ -64,14 +63,14 @@ class HomeViewController: UIViewController {
     ///    }
     
     
-
+    
     //MARK:- Function Part
     /// 로직을 구현 하는 함수 부분입니다. // 함수명 lowerCamelCase 사용
     /// ex) func tableViewSetting() {
     ///         myTableView.delegate = self
     ///         myTableView.datasource = self
     ///    }
-
+    
     
 }
 
@@ -99,18 +98,54 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        return UITableViewCell()
-    
+        if indexPath.row == 0 {
+            guard let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableCollectionViewCell.identifier ) as? TableCollectionViewCell else {
+                return UITableViewCell()
+            }
+            tableViewCell.selectionStyle = .none
+            tableViewCell.awakeFromNib()
+            return tableViewCell
+            
+        } else {
+//            guard let tableViewCell = tableView.dequeueReusableCell(withIdentifier: ContentsCell.identifier ) as? ContentsCell else {
+//                return UITableViewCell()
+//            }
+            let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "ContentsCell", for: indexPath)
+//            tableViewCell.awakeFromNib()
+            tableViewCell.backgroundColor = UIColor.white
+            tableViewCell.selectionStyle = .none
+            return tableViewCell
+            
+            
+        }
+        
+        
+        
+        
+        
     }
     
     
 }
 
 extension HomeViewController : UITableViewDelegate{
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0
+        
+        {
+            return 71
+        }
+        
+        else
+        
+        {
+            return 617
+        }
+        
+    }
 }
