@@ -45,6 +45,10 @@ class ContentsCell: UITableViewCell {
     //MARK:- Life Cycle Part
     /// 앱의 Life Cycle 부분을 선언합니다
     /// ex) override func viewWillAppear() { }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+
 
     
     //MARK:- IBAction Part
@@ -61,6 +65,7 @@ class ContentsCell: UITableViewCell {
     ///    }
     
     // label
+    
     func setCommentLabel(Text: String){
         commentLabel.text = Text
     }
