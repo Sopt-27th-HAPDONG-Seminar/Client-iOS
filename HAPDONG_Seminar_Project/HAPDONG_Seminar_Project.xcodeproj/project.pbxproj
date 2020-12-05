@@ -11,7 +11,9 @@
 		FC2633162578CB0C007F31EF /* SubscribeCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2633142578CB0C007F31EF /* SubscribeCVCell.swift */; };
 		FC2633172578CB0C007F31EF /* SubscribeCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2633152578CB0C007F31EF /* SubscribeCVCell.xib */; };
 		A56C00392578D0230062927F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C00382578D0230062927F /* UIColorExtension.swift */; };
-
+		A5B27E16257A30B80073CE8B /* CuratorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B27E15257A30B80073CE8B /* CuratorCell.swift */; };
+		A5B27E19257A31000073CE8B /* ContentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B27E18257A31000073CE8B /* ContentsCell.swift */; };
+		A5B27E1C257A4CB40073CE8B /* TableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B27E1B257A4CB40073CE8B /* TableCollectionViewCell.swift */; };
 		FDEDBDEA255F94C900FF81EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDE9255F94C900FF81EB /* AppDelegate.swift */; };
 		FDEDBDEC255F94C900FF81EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDEB255F94C900FF81EB /* SceneDelegate.swift */; };
 		FDEDBDEE255F94C900FF81EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBDED255F94C900FF81EB /* ViewController.swift */; };
@@ -27,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		A56C00382578D0230062927F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A5B27E15257A30B80073CE8B /* CuratorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratorCell.swift; sourceTree = "<group>"; };
+		A5B27E18257A31000073CE8B /* ContentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsCell.swift; sourceTree = "<group>"; };
+		A5B27E1B257A4CB40073CE8B /* TableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCollectionViewCell.swift; sourceTree = "<group>"; };
 		B3D3B29525463FD873E5F759 /* Pods_HAPDONG_Seminar_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAPDONG_Seminar_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F402DEDD9B356E0851B6157C /* Pods-HAPDONG_Seminar_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPDONG_Seminar_Project.debug.xcconfig"; path = "Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		F50132D28A1ECEBA0BAB9337 /* Pods-HAPDONG_Seminar_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPDONG_Seminar_Project.release.xcconfig"; path = "Target Support Files/Pods-HAPDONG_Seminar_Project/Pods-HAPDONG_Seminar_Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				FDEDBE1C256028B100FF81EB /* HomeViewController.swift */,
+				A5B27E15257A30B80073CE8B /* CuratorCell.swift */,
+				A5B27E18257A31000073CE8B /* ContentsCell.swift */,
+				A5B27E1B257A4CB40073CE8B /* TableCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -329,7 +337,10 @@
 			files = (
 				FDEDBE1D256028B100FF81EB /* HomeViewController.swift in Sources */,
 				FDEDBDEE255F94C900FF81EB /* ViewController.swift in Sources */,
+				A5B27E16257A30B80073CE8B /* CuratorCell.swift in Sources */,
+				A5B27E19257A31000073CE8B /* ContentsCell.swift in Sources */,
 				A56C00392578D0230062927F /* UIColorExtension.swift in Sources */,
+				A5B27E1C257A4CB40073CE8B /* TableCollectionViewCell.swift in Sources */,
 				FDEDBE1A256028A600FF81EB /* CuratorViewController.swift in Sources */,
 				FDEDBDEA255F94C900FF81EB /* AppDelegate.swift in Sources */,
 				FDEDBDEC255F94C900FF81EB /* SceneDelegate.swift in Sources */,

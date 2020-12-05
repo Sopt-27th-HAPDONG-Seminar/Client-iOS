@@ -2,18 +2,18 @@
   "images" : [
     {
       "scale" : "1x",
-      "filename" : "icFeedShare.png",
+      "filename" : "btnWm54.png",
       "idiom" : "universal"
     },
     {
-      "filename" : "icFeedShare@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
+      "filename" : "btnWm54@2x.png",
+      "scale" : "2x",
+      "idiom" : "universal"
     },
     {
       "scale" : "3x",
       "idiom" : "universal",
-      "filename" : "icFeedShare@3x.png"
+      "filename" : "btnWm54@3x.png"
     }
   ],
   "info" : {
