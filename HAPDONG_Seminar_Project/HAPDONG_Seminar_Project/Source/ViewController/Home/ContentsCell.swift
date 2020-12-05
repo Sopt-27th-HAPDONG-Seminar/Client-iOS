@@ -33,7 +33,7 @@ class ContentsCell: UITableViewCell {
     //MARK:- Variable Part
     /// 뷰컨에 필요한 변수들을 선언합니다  // 변수명 lowerCamelCase 사용
     /// ex)  var imageViewList : [UIImageView] = []
-    static let identifier = "ContentsCell"
+//    static let identifier = "ContentsCell"
     
 
     //MARK:- Constraint Part
@@ -47,6 +47,8 @@ class ContentsCell: UITableViewCell {
     /// ex) override func viewWillAppear() { }
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+//        setCommentLabel(Text: "kjdfnvfkjnvdfjnkdf")
     }
 
 

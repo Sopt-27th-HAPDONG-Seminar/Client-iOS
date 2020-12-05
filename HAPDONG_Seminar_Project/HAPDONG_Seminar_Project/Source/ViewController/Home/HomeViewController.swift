@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
     /// 뷰컨에 필요한 변수들을 선언합니다  // 변수명 lowerCamelCase 사용
     /// ex)  var imageViewList : [UIImageView] = []
     
-    let curatorImage: [String] = ["btnWm54","btnWm54","btnWm54","btnWm54","btnWm54","btnWm54","btnWm54","btnWm54"]
+    var ContentDataSource = ContentsCell()
     
     
     
@@ -42,12 +42,10 @@ class HomeViewController: UIViewController {
         
         homeTableView.delegate = self
         homeTableView.dataSource = self
-        //        homeTableView.separatorStyle = .none
-        
-        //        curatorCollectionView.dataSource = self
-        //        curatorCollectionView.delegate = self
-        
-        
+        homeTableView.backgroundColor = UIColor.veryLightPink
+
+//        homeTableView.register(ContentsCell.self, forCellReuseIdentifier: ContentsCell.identifier)
+
         
     }
     
@@ -114,10 +112,12 @@ extension HomeViewController : UITableViewDataSource{
             return tableViewCell
             
         } else {
-            guard let tableViewCell = tableView.dequeueReusableCell(withIdentifier: ContentsCell.identifier ) as? ContentsCell else {
-                return UITableViewCell()
-            }
-            tableViewCell.awakeFromNib()
+//            guard let tableViewCell = tableView.dequeueReusableCell(withIdentifier: ContentsCell.identifier ) as? ContentsCell else {
+//                return UITableViewCell()
+//            }
+            let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "ContentsCell", for: indexPath)
+//            tableViewCell.awakeFromNib()
+            tableViewCell.backgroundColor = UIColor.white
             tableViewCell.selectionStyle = .none
             return tableViewCell
             
@@ -138,14 +138,13 @@ extension HomeViewController : UITableViewDelegate{
         if indexPath.row == 0
         
         {
-            return TableCollectionViewCell().frame.height + 32
+            return 71
         }
         
         else
         
         {
-            
-            return ContentsCell().frame.height
+            return 617
         }
         
     }

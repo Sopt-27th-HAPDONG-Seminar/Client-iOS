@@ -40,6 +40,8 @@ class TableCollectionViewCell : UITableViewCell {
         super.awakeFromNib()
         self.curatorListCollectionView.delegate = self
         self.curatorListCollectionView.dataSource = self
+        self.curatorListCollectionView.backgroundColor = UIColor.veryLightPink
+        
     }
     
     //MARK:- IBAction Part

@@ -304,9 +304,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="commentLabel" destination="9I3-tQ-wj2" id="gdc-Px-aUQ"/>
-                                            <outlet property="contentsLabel" destination="9I3-tQ-wj2" id="zRb-Ne-X36"/>
-                                            <outlet property="contentsTitleLabel" destination="SGf-PN-hHo" id="Bo3-Pf-egA"/>
+                                            <outlet property="commentLabel" destination="a39-Oy-qTh" id="f2l-De-Jt0"/>
+                                            <outlet property="contentsLabel" destination="9I3-tQ-wj2" id="dfV-qA-FX5"/>
+                                            <outlet property="contentsTitleLabel" destination="SGf-PN-hHo" id="rtB-YT-rya"/>
                                             <outlet property="newsImage" destination="7zY-gy-qY7" id="Tvn-cq-tn4"/>
                                             <outlet property="newsPublisherLabel" destination="yAx-tO-1j4" id="856-ZD-Wl4"/>
                                             <outlet property="newsTitleLabel" destination="IxP-J8-mkN" id="mvP-U0-qiz"/>
@@ -314,7 +314,7 @@
                                             <outlet property="savedNumLabel" destination="TXz-F1-7QV" id="0Le-A7-zqJ"/>
                                             <outlet property="writerImage" destination="hFM-i5-dCg" id="oOz-pp-VNS"/>
                                             <outlet property="writerJobLabel" destination="Ltc-jM-he0" id="lmf-PN-kWS"/>
-                                            <outlet property="writerNameLabel" destination="Ltc-jM-he0" id="o8h-y2-mHJ"/>
+                                            <outlet property="writerNameLabel" destination="A6y-hd-pL4" id="pia-L6-yua"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
