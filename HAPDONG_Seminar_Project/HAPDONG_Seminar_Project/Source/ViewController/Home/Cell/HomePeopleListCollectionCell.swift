@@ -16,4 +16,9 @@ class HomePeopleListCollectionCell: UICollectionViewCell {
     {
         peopleImageView.image = UIImage(named: imageName)
     }
+    
+    func setImageDataFromURL(url : String)
+    {
+        peopleImageView.setProfileImage(with: url)
+    }
 }

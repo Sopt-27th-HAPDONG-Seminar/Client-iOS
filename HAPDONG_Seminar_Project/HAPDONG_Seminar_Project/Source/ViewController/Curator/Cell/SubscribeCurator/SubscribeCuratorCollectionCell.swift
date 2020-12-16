@@ -43,24 +43,24 @@ class SubscribeCuratorCollectionCell: UICollectionViewCell {
     func setCuratorData(userName : String, jobName : String, isNew : Bool, image : String,tagNameList: [String])
     {
 
-//        self.userNameLabel.text = userName
-//        self.jobLabel.text = jobName
-//
-//        if isNew == true
-//        {
-//            self.newBadgeImageView.isHidden = false
-//        }
-//        else
-//        {
-//            self.newBadgeImageView.isHidden = true
-//        }
-//
-//        self.profileImageView.setProfileImage(with: image)
-//
+        self.userNameLabel.text = userName
+        self.jobLabel.text = jobName
+
+        if isNew == true
+        {
+            self.newBadgeImageView.isHidden = false
+        }
+        else
+        {
+            self.newBadgeImageView.isHidden = true
+        }
+
+        self.profileImageView.setProfileImage(with: image)
+
         
         
         
-//        self.tagList = tagNameList
+        self.tagList = tagNameList
 // 요건 서버 붙이고 넣을 정보
         
     }

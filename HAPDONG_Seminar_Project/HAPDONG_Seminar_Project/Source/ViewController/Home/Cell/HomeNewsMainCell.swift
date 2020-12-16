@@ -103,7 +103,7 @@ class HomeNewsMainCell: UITableViewCell {
         newsTitleTextView.contentInset.left = -5
     }
     
-    func setData(isClicked : Bool)
+    func setClickedData(isClicked : Bool)
     {
         if isClicked == true
         {
@@ -114,6 +114,23 @@ class HomeNewsMainCell: UITableViewCell {
             self.mainContentTextViewHeightConstraint.constant = 100
         }
     }
+    
+    func setData(title : String, description : String, articleImageURL : String, articleTitle : String,
+                 articleSource : String, saveCount : Int, creator : CuratorDataModel)
+    {
+        self.titleTextView.text = title
+        self.mainContentView.text = description
+        self.newsImageView.setImage(with: articleImageURL)
+        self.newsTitleTextView.text = articleTitle
+        self.pressNameTextLabel.text = articleSource
+        self.saveCountLabel.text = String(saveCount)
+        self.userNameTextLabel.text = creator.name
+        self.userProfileImageView.setProfileImage(with: creator.profileURL)
+        self.companyNameTextLabel.text = creator.company + " " + creator.role
+        
+    }
+    
+    
     
 
     //MARK:- Function Part

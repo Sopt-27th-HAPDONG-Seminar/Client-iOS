@@ -16,6 +16,8 @@ class HomeNewsHeaderCell: UITableViewCell {
     
 
     //MARK:- Variable Part
+    
+    var thumbNailList : [String] = []
 
     //MARK:- Constraint Part
     
@@ -51,6 +53,11 @@ class HomeNewsHeaderCell: UITableViewCell {
 
     //MARK:- Function Part
     
+    func setThumbnailList()
+    {
+        self.peopleListCollectionView.reloadData()
+    }
+    
 
     
     //MARK:- @objc function Part
@@ -70,7 +77,7 @@ extension HomeNewsHeaderCell : UICollectionViewDelegate
 extension HomeNewsHeaderCell : UICollectionViewDataSource
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return thumbNailList.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -81,11 +88,10 @@ extension HomeNewsHeaderCell : UICollectionViewDataSource
         if indexPath.row == 0
         {
             peopleCell.setImageData(imageName: "btnAllSelect")
-
         }
         else
         {
-            peopleCell.setImageData(imageName: "btnWm1")
+            peopleCell.setImageDataFromURL(url: thumbNailList[indexPath.row - 1])
         }
         
         return peopleCell

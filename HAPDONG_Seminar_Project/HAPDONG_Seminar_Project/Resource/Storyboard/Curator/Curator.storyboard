@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ciE-gm-G3t">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ciE-gm-G3t">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -81,6 +81,10 @@
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picSubscribewm" translatesAutoresizingMaskIntoConstraints="NO" id="MaK-bQ-WXk">
                                                                     <rect key="frame" x="19" y="18" width="42" height="42"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="42" id="2fF-cl-fBX"/>
+                                                                        <constraint firstAttribute="height" constant="42" id="vf6-YU-lgu"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="허재원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmp-bu-Ev1">
                                                                     <rect key="frame" x="76" y="22" width="31.5" height="16"/>
@@ -329,6 +333,13 @@
                                                             </constraints>
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="170" height="282"/>
+                                                        <connections>
+                                                            <outlet property="jobLabel" destination="zVR-Yz-9pf" id="rFy-mk-5Hh"/>
+                                                            <outlet property="nameLabel" destination="fp8-NU-lwd" id="Xme-sJ-8NX"/>
+                                                            <outlet property="profileImageView" destination="2JT-Hw-cCX" id="KbX-iz-8d9"/>
+                                                            <outlet property="subscribeButton" destination="XA5-xU-97x" id="HEE-Pu-KAA"/>
+                                                            <outlet property="tagCollectionView" destination="GnR-so-Vig" id="1ea-K9-M7j"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>

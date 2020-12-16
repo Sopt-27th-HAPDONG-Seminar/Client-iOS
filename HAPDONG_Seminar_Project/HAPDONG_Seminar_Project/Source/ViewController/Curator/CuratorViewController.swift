@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class CuratorViewController: UIViewController {
 
     //MARK:- IBOutlet Part
@@ -23,7 +24,7 @@ class CuratorViewController: UIViewController {
     //MARK:- Variable Part
 
     var subscribeCuratorList : [SubsribeCuratorDataModel] = []
-    var categoryList : [CateogoryDataModel] = []
+    var categoryList : [SubsribeCuratorDataModel] = []
     
     
     //MARK:- Constraint Part
@@ -38,6 +39,10 @@ class CuratorViewController: UIViewController {
         super.viewDidLoad()
         settingCollectionView()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        settingData()
     }
     //MARK:- IBAction Part
 
@@ -61,12 +66,41 @@ class CuratorViewController: UIViewController {
     {
         self.subscribeCuratorCollectionView.delegate = self
         self.subscribeCuratorCollectionView.dataSource = self
-//        self.subscribeCuratorCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "SubscribeCuratorCollectionCell")
+
         
         self.categoryCollectionView.delegate = self
         self.categoryCollectionView.dataSource = self
-//        self.categoryCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CategoryCollectionCell")
         
+    }
+    
+    func settingData()
+    {
+        CuratorSubscribedListService.shared.getAlarmList { (result) in
+            switch(result)
+            {
+            case .success(let curatorList):
+                self.subscribeCuratorList = curatorList as? [SubsribeCuratorDataModel] ?? []
+                self.subscribeCuratorCollectionView.reloadData()
+            
+            default :
+                makeAlert(title: "알림", message: "데이터 불러오는데 실패하였습니다", vc: self)
+
+            }
+        }
+        
+        
+        CuratorTotalListService.shared.getAlarmList { (result) in
+            switch(result)
+            {
+            case .success(let curatorList):
+                self.categoryList = curatorList as? [SubsribeCuratorDataModel] ?? []
+                self.categoryCollectionView.reloadData()
+            
+            default :
+                makeAlert(title: "알림", message: "데이터 불러오는데 실패하였습니다", vc: self)
+
+            }
+        }
     }
     
     
@@ -83,12 +117,12 @@ extension CuratorViewController : UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == subscribeCuratorCollectionView
         {
-            return 3
+            return subscribeCuratorList.count
         }
         
         else
         {
-            return 6
+            return categoryList.count
         }
     }
     
@@ -99,7 +133,16 @@ extension CuratorViewController : UICollectionViewDelegate, UICollectionViewData
 
             guard let curatorCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SubscribeCuratorCollectionCell", for: indexPath) as? SubscribeCuratorCollectionCell else {return UICollectionViewCell() }
             
-            curatorCell.setTagCollection()
+            if subscribeCuratorList.count > 0
+            {
+                curatorCell.setCuratorData(userName: subscribeCuratorList[indexPath.row].name,
+                                           jobName: subscribeCuratorList[indexPath.row].job,
+                                           isNew: subscribeCuratorList[indexPath.row].isNew,
+                                           image: subscribeCuratorList[indexPath.row].profileImage,
+                                           tagNameList: subscribeCuratorList[indexPath.row].tagList )
+                curatorCell.setTagCollection()
+            }
+
             
 
             return curatorCell
@@ -108,6 +151,17 @@ extension CuratorViewController : UICollectionViewDelegate, UICollectionViewData
         {
             guard let categoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionCell", for: indexPath) as? CategoryCollectionCell else {return UICollectionViewCell() }
             
+            
+            if categoryList.count > 0
+            {
+                categoryCell.setData(profileImage: categoryList[indexPath.row].profileImage,
+                                     isSubscribed: categoryList[indexPath.row].isNew,
+                                     name: categoryList[indexPath.row].name,
+                                     job: categoryList[indexPath.row].job,
+                                     tagList: categoryList[indexPath.row].tagList)
+            }
+            
+
             return categoryCell
             
 
@@ -142,7 +196,7 @@ extension CuratorViewController : UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if collectionView == subscribeCuratorCollectionView
         {
-            return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 50)
+            return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 100)
         }
         else
         {
